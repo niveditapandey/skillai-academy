@@ -694,6 +694,73 @@
         }
 
         /* Testimonial Ribbon */
+        /* Static testimonials anchor section */
+        .testimonials-section {
+            padding: 72px 24px 56px;
+            background: #f8f9fc;
+            border-top: 1px solid var(--border);
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .testimonials-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 32px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .testimonials-meta {
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .tcard {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .tcard-quote {
+            font-size: 15px;
+            line-height: 1.7;
+            color: var(--text);
+            flex: 1;
+        }
+
+        .tcard-quote::before { content: '\201C'; }
+        .tcard-quote::after  { content: '\201D'; }
+
+        .tcard-attr {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-top: 1px solid var(--border);
+            padding-top: 14px;
+        }
+
+        @media (max-width: 640px) {
+            .testimonials-grid { grid-template-columns: 1fr; }
+        }
+
         .testimonial-ribbon {
             background: linear-gradient(135deg, #0f4c75 0%, #1a1a2e 100%);
             padding: 0;
@@ -1052,6 +1119,40 @@
     </section>
 
     <!-- Testimonial Ribbon -->
+    <!-- Testimonials: static anchor section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="testimonials-header">
+            <h2 class="testimonials-title">What Attendees Say</h2>
+            <p class="testimonials-meta">438 civil servants and professionals trained across IAS, Civil Services, CDPO and PSU batches. Rated 4.81 / 5.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="tcard">
+                <p class="tcard-quote">"This session changed how I think and work. I will now pilot AI solutions before going to tender."</p>
+                <p class="tcard-attr">IAS Officer - Jharkhand Government</p>
+            </div>
+            <div class="tcard">
+                <p class="tcard-quote">"This session made me understand that AI is a simple, user-friendly system which can be used by every section of society - a true tool for a welfare state."</p>
+                <p class="tcard-attr">Civil Services Officer - Government Training</p>
+            </div>
+            <div class="tcard">
+                <p class="tcard-quote">"Content and case studies were very relatable to our job profile. Practical application of AI on our roles was the highlight."</p>
+                <p class="tcard-attr">CDPO - Child Development Programme Officer, Jharkhand</p>
+            </div>
+            <div class="tcard">
+                <p class="tcard-quote">"I learnt that AI is more about delivering public services more easily. I will use it in my official work."</p>
+                <p class="tcard-attr">Civil Services Officer - Government Training</p>
+            </div>
+            <div class="tcard">
+                <p class="tcard-quote">"Before this session, I thought AI meant ChatGPT. Now I think it is much more than that - with various diverse uses in governance."</p>
+                <p class="tcard-attr">IAS Officer - Jharkhand Government</p>
+            </div>
+            <div class="tcard">
+                <p class="tcard-quote">"Loved the interactive session and practical based approach. New ideas I can take back to my work immediately."</p>
+                <p class="tcard-attr">CDPO - Child Development Programme Officer, Jharkhand</p>
+            </div>
+        </div>
+    </section>
+
     <div class="testimonial-ribbon">
         <div class="ribbon-label"><span>Attendee Voices</span></div>
         <div class="ribbon-track-wrapper">
@@ -1079,7 +1180,7 @@
                 </div>
                 <span class="ribbon-divider">✦</span>
                 <div class="ribbon-item">
-                    <span class="quote-text">&ldquo;This session changed how I think and work — seeing probabilities discussed alongside real examples of AI usage in governance.&rdquo;</span>
+                    <span class="quote-text">&ldquo;This session changed how I think and work - seeing probabilities discussed alongside real examples of AI usage in governance.&rdquo;</span>
                     <span class="quote-attr">- IAS Officer</span>
                 </div>
                 <span class="ribbon-divider">✦</span>
@@ -1104,7 +1205,7 @@
                 </div>
                 <span class="ribbon-divider">✦</span>
                 <div class="ribbon-item">
-                    <span class="quote-text">&ldquo;This session made me realise that we don't need to rely completely on the Centre or State — AI puts that power in our hands.&rdquo;</span>
+                    <span class="quote-text">&ldquo;This session made me realise that we don't need to rely completely on the Centre or State - AI puts that power in our hands.&rdquo;</span>
                     <span class="quote-attr">- Civil Services Officer</span>
                 </div>
                 <span class="ribbon-divider">✦</span>
@@ -1236,7 +1337,7 @@
                 </div>
                 <span class="ribbon-divider">✦</span>
                 <div class="ribbon-item">
-                    <span class="quote-text">&ldquo;This session changed how I think and work — seeing probabilities discussed alongside real examples of AI usage in governance.&rdquo;</span>
+                    <span class="quote-text">&ldquo;This session changed how I think and work - seeing probabilities discussed alongside real examples of AI usage in governance.&rdquo;</span>
                     <span class="quote-attr">- IAS Officer</span>
                 </div>
                 <span class="ribbon-divider">✦</span>
@@ -1261,7 +1362,7 @@
                 </div>
                 <span class="ribbon-divider">✦</span>
                 <div class="ribbon-item">
-                    <span class="quote-text">&ldquo;This session made me realise that we don't need to rely completely on the Centre or State — AI puts that power in our hands.&rdquo;</span>
+                    <span class="quote-text">&ldquo;This session made me realise that we don't need to rely completely on the Centre or State - AI puts that power in our hands.&rdquo;</span>
                     <span class="quote-attr">- Civil Services Officer</span>
                 </div>
                 <span class="ribbon-divider">✦</span>
